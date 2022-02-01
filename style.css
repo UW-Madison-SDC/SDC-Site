@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 800px;
+    width: auto;
+}
+
+title div {
+    font-size: 28px;
+}
+
+#title {
+    color: whitesmoke;
+    font-size: 42px;
+    align-self: center;
+}
+
+#header {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#banner {
+    display: flex;
+    width: 100%;
+    height: 7cm;
+    background-color: maroon;
+    border-bottom: 12px grey outset;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+.header-link {
+    text-align: center;
+    font-size: 24px;
+    border-left: 5px red solid;
+    background-color: rgba(255, 0, 0, 0.178);
+    border-radius: 0 8px 8px 0;
+    padding: 0 1ch;
+    flex: 0;
+}
+
+.header-link:hover {
+    background-color:rgba(255, 0, 0, 0.384);
+    color: white;
+    transform: scale(1.1);
+}
+
+#links {
+    display: flex;
+    gap: 2ch;
+    align-self: flex-end;
+    padding: 2ch;
+    margin-left: 8ch;
+    margin-right: 4ch;
+    flex-wrap: wrap;
+}
+
+#project-link {
+    background-color: rgba(112, 128, 144, 0.356);
+    border-color: darkslategray
+}
+
+#project-link:hover {
+    background-color: rgba(112, 128, 144, 0.5);
+    color: white;
+}
+
+#discord-link {
+    background-color: rgba(65, 105, 225, 0.219);
+    border-color: royalblue;
+}
+
+#discord-link:hover {
+    background-color: rgba(65, 105, 225, 0.493);
+    color: white;
+}
+
+#discord-icon {
+    display: inline;
+}
+
+#github-icon {
+    display: inline;
+}
+
+#logo {
+    margin: 0.5cm;
+    border-radius: 12px;
+    width: 200px;
+    height: 200px;
+}
+
+#highlights {
+    text-shadow: 3px 1px 4px maroon;
+    font-size: 88px;
+    align-self: stretch;
+    text-align: center;
+    padding: 4ch 2ch;
+    font-weight: 560;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+
+}
+
+#highlights-back {
+    background-color: whitesmoke;
+    min-height: 17cm;
+    border-bottom: 8px inset grey;
+}
+
+#news-area {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(maroon, black);
+    min-height: 40vh;
+}
+
+#footer {
+    display: flex;
+    background-color: black;
+    color: whitesmoke;
+    padding: 4rem; 
+    font-weight: lighter;
+    font-size: 14px;
+    gap: 10ch;
+    flex: 1;
+}
+
+#footer a {
+    text-decoration: underline;
+}
+
+#footer p {
+    padding: 1ch 0;
+    max-width: 60ch;
+}
+
+#footer h1 {
+    font-weight: lighter;
+    font-size: 18px;
+    border-bottom: 2px solid white;
+}
