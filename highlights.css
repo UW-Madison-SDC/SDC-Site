@@ -1,0 +1,20 @@
+#highlights {
+    display: flex;
+    text-shadow: 3px 1px 4px maroon;
+    font-size: 88px;
+    align-self: stretch;
+    text-align: center;
+    align-items: center;
+    margin: 1ch 2ch;
+    font-weight: 560;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 12ch;
+}
+
+#highlights-back {
+    background-color: whitesmoke;
+    min-height: 17cm;
+    border-bottom: 8px inset grey;
+}

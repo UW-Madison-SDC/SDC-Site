@@ -1,5 +1,5 @@
 const highlightBox = document.querySelector("#highlights");
-const highlights = ["Connect with Proffesional Software Developers In the Industry", "Hone your Software Development Skills Through Projects with your Peers", "Learn Extracurricular Development Skills Through Workshops", "\n\n"];
+const highlights = ["Connect with Proffesional Software Developers In the Industry", "Hone your Software Development Skills Through Projects with your Peers", "Learn Extracurricular Development Skills Through Workshops", ""];
 const highlightImages = ["", "", "", "images/sdc-logo-transparent.png"];
 // Note that one of the highlights is intentionally blank
 // hightlights needs to have same length as highlightImages

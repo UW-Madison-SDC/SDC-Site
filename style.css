@@ -105,33 +105,6 @@ a {
     height: 200px;
 }
 
-#highlights {
-    text-shadow: 3px 1px 4px maroon;
-    font-size: 88px;
-    align-self: stretch;
-    text-align: center;
-    padding: 4ch 2ch;
-    font-weight: 560;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100%;
-
-}
-
-#highlights-back {
-    background-color: whitesmoke;
-    min-height: 17cm;
-    border-bottom: 8px inset grey;
-}
-
-#news-area {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(maroon, black);
-    min-height: 40vh;
-}
-
 #footer {
     display: flex;
     background-color: black;
@@ -141,6 +114,14 @@ a {
     font-size: 14px;
     gap: 10ch;
     flex: 1;
+}
+
+#footer ul {
+    list-style-type: none;
+}
+
+#footer li {
+    margin: 1ch 0;
 }
 
 #footer a {
@@ -156,4 +137,13 @@ a {
     font-weight: lighter;
     font-size: 18px;
     border-bottom: 2px solid white;
+}
+
+#critical {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid rgb(85, 1, 1);
+    background-color:rgba(85, 1, 1, 0.26);
+    padding: 2ch 4ch;
 }
