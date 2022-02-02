@@ -1,19 +1,30 @@
 #news-area {
     display: flex;
+    flex-wrap: nowrap;
     width: 100%;
     height: 100%;
     background: linear-gradient(maroon, black);
     min-height: 40vh;
-    max-height: 60vh;
+    max-height: 80vh;
     gap: 1cm;
     padding: 1cm;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#news-title {
+    text-align: center;
+    background-color: maroon;
+    color: gainsboro;
+    font-size: 52px;
+    padding: 1ch;
 }
 
 .article {
     border: 4px solid slategrey;
     background-color: rgba(211, 211, 211, 0.747);
-    min-width: 6cm;
-    max-width: 12cm;
+    min-width: 10cm;
+    max-width: 14cm;
 }
 
 .article p {
@@ -28,4 +39,12 @@
     text-align: center;
     border-bottom: 2px darkslategray solid;
     background-color:rgba(211, 211, 211, 0.836);
+}
+
+.article a {
+    color: white;
+}
+
+.article a:hover {
+    color: maroon;
 }

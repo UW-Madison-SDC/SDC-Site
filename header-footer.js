@@ -1,4 +1,6 @@
-// This was my solution to not repeatedly adding the header and footer
+// This was my solution to not repeatedly adding the header and footer to each page.
+// All pages simply need to include the style.css sheet and this script, then put
+// the corresponding element with id matching one of these. See bottom of script.
 const bannerHTML = `
 <a href="index.html"><img id="logo" src="images/sdc-logo-icon.png"/></a>
 <div id="header">
