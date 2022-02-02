@@ -1,11 +1,11 @@
-#about-title {
+#board-title {
     font-size: 42px;
     text-align: center;
     background-color: lightgrey;
-    padding: 2ch;
+    padding: 2cm;
 }
 
-#about {
+#board {
     padding: 6ch;
     display: flex;
     flex-wrap: wrap;
@@ -37,4 +37,22 @@
 
 .bio img {
     margin: 1ch;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    padding: 4cm;
+    gap: 1cm;
+}
+
+#about h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+#about p {
+    margin: 2ch 20%;
+    font-size: 24px;
+    text-align: center;
 }
