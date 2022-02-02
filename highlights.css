@@ -11,6 +11,8 @@
     background-repeat: no-repeat;
     height: 100%;
     min-height: 12ch;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: -5px -10px darkgray, 10px 15px 15px rgba(0, 0, 0);
 }
 
 #highlights-back {

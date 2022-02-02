@@ -1,6 +1,7 @@
 const highlightBox = document.querySelector("#highlights");
 const highlights = ["Connect with Professional Software Developers In the Industry", "Hone your Software Development Skills Through Projects with your Peers", "Learn Extracurricular Development Skills Through Workshops", ""];
 const highlightImages = ["", "", "", "images/sdc-logo-transparent.png"];
+const highlightBackground = ["rgba(15,15,200,0.4)", "rgba(105,175,175,0.4)", "rgba(175,175,105,0.4)", "rgba(140,10,10,0.7)"];
 // Note that one of the highlights is intentionally blank
 // hightlights needs to have same length as highlightImages
 // Can add pictures to other slides as well, but currently do not have any
@@ -21,6 +22,7 @@ function paintHighlight(time) {
         h = (h + 1) % highlights.length;
         highlightBox.innerText = highlights[h];
         highlightBox.style.backgroundImage = `url("${highlightImages[h]}")`;
+        highlightBox.style.backgroundColor = highlightBackground[h];
     } else if (a >= 1) {
         toTransparent = true;
     }
