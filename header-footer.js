@@ -1,18 +1,19 @@
 // This was my solution to not repeatedly adding the header and footer to each page.
 // All pages simply need to include the style.css sheet and this script, then put
 // the corresponding element with id matching one of these. See bottom of script.
+// I call the header the banner here
 const bannerHTML = `
-<a href="index.html"><img id="logo" src="images/sdc-logo-icon.png"/></a>
+<a href="index.html"><img id="logo" src="images/sdc-icon.png"/></a>
 <div id="header">
         <h1 id="title">
             <div>UW-Madison</div>Software Development Club
         </h1>
         <div id="links">
             <a class="header-link" id="project-link" href="">Projects
-                <img id="github-icon" src="images/github-logo-icon.png" />
+                <img id="github-icon" src="images/github-icon.png" />
             </a>
             <a href="https://discord.gg/kGssWKMjya" class="header-link" id="discord-link">Discord
-                <img id="discord-icon" src="images/discord-logo-small.png" />
+                <img id="discord-icon" src="images/discord-icon.png" />
             </a>
             <a href="info.html" class="header-link">About</a>
     </div>
