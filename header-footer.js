@@ -12,7 +12,7 @@ const bannerHTML = `
             <a href="https://discord.gg/kGssWKMjya" class="header-link" id="discord-link">Discord
                 <img id="discord-icon" src="images/discord-logo-small.png" />
             </a>
-            <a href="info.html" class="header-link">Info</a>
+            <a href="info.html" class="header-link">About</a>
     </div>
 </div>
 `;

@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    min-width: 800px;
+    min-width: 900px;
     width: auto;
 }
 
@@ -45,6 +45,9 @@ a {
 }
 
 .header-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
     text-align: center;
     font-size: 24px;
     border-left: 5px red solid;
@@ -52,6 +55,7 @@ a {
     border-radius: 0 8px 8px 0;
     padding: 0 1ch;
     flex: 0;
+    min-width: 15ch;
 }
 
 .header-link:hover {
@@ -72,7 +76,7 @@ a {
 
 #project-link {
     background-color: rgba(112, 128, 144, 0.356);
-    border-color: darkslategray
+    border-color: darkslategray;
 }
 
 #project-link:hover {
