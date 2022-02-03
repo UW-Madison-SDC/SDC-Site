@@ -9,7 +9,7 @@ const bannerHTML = `
             <div>UW-Madison</div>Software Development Club
         </h1>
         <div id="links">
-            <a class="header-link" id="project-link" href="">Projects
+            <a class="header-link" id="project-link" href="">Project GitHub
                 <img id="github-icon" src="images/github-icon.png" />
             </a>
             <a href="https://discord.gg/kGssWKMjya" class="header-link" id="discord-link">Discord
