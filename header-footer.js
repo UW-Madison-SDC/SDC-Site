@@ -20,7 +20,9 @@ const bannerHTML = `
 </div>
 `;
 // TODO fix line 9 and 27: https://github.com/segedi-UW/SDC-Projects
-const footerHTML = `<div>
+const footerHTML = `
+    <div id="info">
+        <div>
             <h1>
                 Club Info
             </h1>
@@ -47,7 +49,10 @@ const footerHTML = `<div>
                 <li>Jhanvi Sangha - VP of Engineering</li>
             </ul>
         </div>
-        <div>
+    </div>
+
+        <div id="contact">
+<div>
             <h1>
                 Contact Us
             </h1>
@@ -55,8 +60,11 @@ const footerHTML = `<div>
                 <li>Message us on <a href="https://discord.gg/kGssWKMjya">discord</a></li>
                 <li>Message us on <a href="https://www.linkedin.com/company/theuwsdc/">LinkedIn</a></li>
                 <li>Email rtanvir@wisc.edu, our VP of External Communication</li>
+                <li>Email vshang2@wisc.edu, our President</li>
             </ul>
-        </div>`;
+        </div>
+        </div>
+        `;
 const criticalNews = `
 <p>
     Pardon our dust, this site is currently a work in progress! Additionally, 

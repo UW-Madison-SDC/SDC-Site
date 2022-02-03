@@ -118,6 +118,7 @@ a {
     font-size: 14px;
     gap: 10ch;
     flex: 1;
+    justify-content: space-between;
 }
 
 #footer ul {
@@ -138,9 +139,21 @@ a {
 }
 
 #footer h1 {
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 18px;
-    border-bottom: 2px solid white;
+}
+
+#info {
+    display: flex;
+    gap: 2cm;
+}
+
+#contact {
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: stretch;
+    max-width: 30ch;
 }
 
 #critical {
