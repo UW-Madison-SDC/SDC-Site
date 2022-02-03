@@ -5,17 +5,22 @@
 const bannerHTML = `
 <a href="index.html"><img id="logo" src="images/sdc-icon.png"/></a>
 <div id="header">
-        <h1 id="title">
-            <div>UW-Madison</div>Software Development Club
-        </h1>
-        <div id="links">
-            <a class="header-link" id="project-link" href="">Project GitHub
-                <img id="github-icon" src="images/github-icon.png" />
-            </a>
-            <a href="https://discord.gg/kGssWKMjya" class="header-link" id="discord-link">Discord
-                <img id="discord-icon" src="images/discord-icon.png" />
-            </a>
-            <a href="info.html" class="header-link">About</a>
+    <h1 id="title">
+        <div>UW-Madison</div>Software Development Club
+    </h1>
+    <div id="links">
+    <div id="ext-links">
+        <a class="header-link" id="project-link" href="">Project GitHub
+            <img id="github-icon" src="images/github-icon.png" />
+        </a>
+        <a href="https://discord.gg/kGssWKMjya" class="header-link" id="discord-link">Discord
+            <img id="discord-icon" src="images/discord-icon.png" />
+        </a>
+    </div>
+    <div id="int-links">
+        <a href="project.html" class="int-link">Projects</a>
+        <a href="info.html" class="int-link">About</a>
+    </div>
     </div>
 </div>
 `;

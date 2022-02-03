@@ -66,8 +66,33 @@ a {
 
 #links {
     display: flex;
-    gap: 2ch;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#int-links {
+    display: flex;
     align-self: flex-end;
+    font-size: 24px;
+}
+
+.int-link {
+    border-radius: 10px 10px 0 0;
+    border-top: 2px solid rgb(49, 5, 5);
+    border-left: 2px solid rgb(49, 5, 5);
+    border-right: 2px solid rgb(49, 5, 5);
+    padding: 0.5ch 2ch;
+    background-color: rgba(255, 0, 0, 0.171);
+}
+
+.int-link:hover {
+    transform: translate(0, -5px) scaleY(1.2);
+}
+
+#ext-links {
+    display: flex;
+    gap: 2ch;
+    align-self: flex-start;
     padding: 2ch;
     margin-left: 8ch;
     margin-right: 4ch;

@@ -5,14 +5,22 @@
     align-self: stretch;
     text-align: center;
     align-items: center;
-    margin: 1ch 2ch;
     font-weight: 560;
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
     min-height: 12ch;
+    border-radius: 15px 15px 15px 15px;
+}
+
+#highlights-border {
     border-radius: 20px 20px 20px 20px;
-    box-shadow: -5px -10px darkgray, 10px 15px 15px rgba(0, 0, 0);
+    box-shadow: 10px 15px 18px rgba(0, 0, 0);
+    border-left: 8px solid grey;
+    border-top: 8px solid grey;
+    padding: 0;
+    font-size: 88px;
+    margin: 1ch 2ch;
 }
 
 #highlights-back {
