@@ -183,10 +183,10 @@ a {
 }
 
 #critical {
+    color: whitesmoke;
     font-size: 24px;
-    font-weight: bold;
     text-align: center;
     border: 3px solid rgb(85, 1, 1);
-    background-color:rgba(85, 1, 1, 0.26);
+    background-color:rgba(85, 1, 1, 0.603);
     padding: 2ch 4ch;
 }
