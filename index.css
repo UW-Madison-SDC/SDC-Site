@@ -45,7 +45,7 @@
     background-color: rgba(211, 211, 211, 0.747);
     min-width: 10cm;
     max-width: 14cm;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .article p {

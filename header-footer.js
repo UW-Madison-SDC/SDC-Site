@@ -18,6 +18,7 @@ const bannerHTML = `
         </a>
     </div>
     <div id="int-links">
+        <a href="index.html" class="int-link">Home</a>
         <a href="project.html" class="int-link">Projects</a>
         <a href="info.html" class="int-link">About</a>
     </div>
