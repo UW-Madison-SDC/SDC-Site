@@ -80,9 +80,10 @@
 }
 
 .article a {
-    color: white;
+    color: maroon;
+    font-weight: bold;
 }
 
 .article a:hover {
-    color: maroon;
+    color: white;
 }
