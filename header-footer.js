@@ -10,7 +10,7 @@ const bannerHTML = `
     </h1>
     <div id="links">
     <div id="ext-links">
-        <a class="header-link" id="project-link" href="">Project GitHub
+        <a class="header-link" id="project-link" href="https://github.com/segedi-UW/SDC-Projects">Project GitHub
             <img id="github-icon" src="images/github-icon.png" />
         </a>
         <a href="https://discord.gg/kGssWKMjya" class="header-link" id="discord-link">Discord
@@ -25,7 +25,6 @@ const bannerHTML = `
     </div>
 </div>
 `;
-// TODO fix line 9 and 27: https://github.com/segedi-UW/SDC-Projects
 const footerHTML = `
     <div id="info">
         <div>
@@ -35,7 +34,7 @@ const footerHTML = `
             <ul>
                 <li>
                     If you are interested in projects, check out our project
-                    <a href="">GitHub</a>
+                    <a href="https://github.com/segedi-UW/SDC-Projects">GitHub</a>
                 </li>
                 <li>Meetings for Spring 2022 are every other Wednesday, starting 2/6.</li>
                 <li>Project meetings are the Sunday before the Wednesday meeting.</li>
