@@ -12,11 +12,57 @@
     min-height: 1380px;
 }
 
+#side-bar {
+    margin: 2ch 0;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    max-width: 20ch;
+    top: 30%;
+    left: 2ch;
+    /* Want to be on top of everything */
+    z-index: 100;
+}
+
+#side-bar a {
+    text-align: center;
+    width: 100%;
+    padding: 2ch;
+    background-color: rgba(110, 0, 0, 0.178);
+    color: maroon;
+    font-weight: bold;
+    border: 3px solid white;
+    border-bottom-style: none;
+}
+
+#side-bar a:hover {
+    background-color: whitesmoke;
+}
+
+#side-bar .start {
+    border-radius: 30px 30px 0 0;
+}
+
+#side-bar .end {
+    border-bottom-style: solid;
+    border-radius: 0 0 30px 30px;
+}
+
 #view {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 1000px;
+    min-height: 40vh;
+}
+
+#view::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, rgb(175, 175, 175));
+    z-index: 10;
 }
 
 #project-title {
@@ -26,20 +72,42 @@
     background-color: rgba(148, 148, 148, 0.301);
     border-radius: 60px;
     padding: 1.25ch 1ch;
+    margin-bottom: 20vh;
 }
 
-#view::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(transparent, gainsboro);
-    z-index: 10;
+#sections {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    position: relative;
+    min-height: 800px;
+    padding: 10% 25%;
+    font-size: 28px;
+}
+
+#getting-started {
+    background-color: rgb(175, 175, 175);
+}
+
+.section h1 {
+    text-align: center;
+    margin: 0 0 4ch 0;
+}
+
+.section a {
+    color: maroon;
+}
+
+.section a:hover {
+    color: orangered;
+}
+
+#purpose {
+    background-color: rgba(190, 190, 190, 0.945);
 }
 
 #project-highlights {
-    position: relative;
-    min-height: 800px;
     background-color: gainsboro;
 }
