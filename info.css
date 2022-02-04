@@ -32,7 +32,7 @@
     margin: 2ch;
     padding: 1ch 2ch;
     color: gainsboro;
-    flex: 1;
+    flex: 0 0 1;
 }
 
 .bio img {
