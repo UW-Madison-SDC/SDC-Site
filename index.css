@@ -20,6 +20,24 @@
     padding: 2cm;
 }
 
+#news-tab {
+    font-size: 22px;
+    color: maroon;
+    border: 2px solid maroon;
+    border-bottom-style: none;
+    border-radius: 10px 10px 0 0;
+    background-color:rgba(211, 211, 211);
+    opacity: 0.5;
+    position: fixed;
+    bottom: 0;
+    left: 1ch;
+    padding: 0.5ch 1.5ch;
+}
+
+#news-tab:hover {
+    opacity: 1;
+}
+
 .article {
     display: flex;
     flex-direction: column;
@@ -27,6 +45,7 @@
     background-color: rgba(211, 211, 211, 0.747);
     min-width: 10cm;
     max-width: 14cm;
+    overflow-y: scroll;
 }
 
 .article p {
