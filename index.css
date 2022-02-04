@@ -63,9 +63,11 @@
 }
 
 .article h2 {
+    background-color: rgba(155, 142, 142, 0.31);
     text-align: center;
-    background-color: rgba(148, 18, 18, 0.11);
     padding: 0.5ch 0;
+    font-weight: normal;
+    font-size: 28px;
 }
 
 .article .section {
@@ -73,6 +75,11 @@
     margin: 2ch;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.37);
+}
+
+.article .urgent {
+    background-color: rgba(148, 18, 18, 0.322);
+    font-weight: bold;
 }
 
 .section-head {
