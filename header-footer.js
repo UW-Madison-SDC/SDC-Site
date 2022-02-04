@@ -73,7 +73,7 @@ const footerHTML = `
 const criticalNews = `
 <p>
     Pardon our dust, this site is currently a work in progress! Additionally, 
-    the project GitHub link will not be activated until this Friday (2/4)
+    the project GitHub link has been activated! Find it at the top right of the page!
 </p>`;
 const banner = document.querySelector("#banner");
 const footer = document.querySelector("#footer");
