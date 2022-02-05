@@ -1,15 +1,16 @@
 #highlights {
     display: flex;
     text-shadow: 3px 1px 4px maroon;
-    font-size: 88px;
+    font-size: 48px;
     align-self: stretch;
     text-align: center;
     align-items: center;
+    justify-content: center;
     font-weight: 560;
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
-    min-height: 12ch;
+    min-height: 16ch;
     border-radius: 15px 15px 15px 15px;
 }
 
@@ -25,6 +26,5 @@
 
 #highlights-back {
     background-color: whitesmoke;
-    min-height: 17cm;
     border-bottom: 8px inset grey;
 }
