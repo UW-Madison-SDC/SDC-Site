@@ -1,3 +1,8 @@
+widgetbot {
+    width: 600px;
+    height: 800px;
+}
+
 #news-area {
     display: flex;
     flex-wrap: nowrap;
