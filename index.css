@@ -70,14 +70,18 @@
     font-size: 28px;
 }
 
-.article .section {
-    border: 2px solid maroon;
+.section {
+    border: 2px solid slategrey;
     margin: 2ch;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.37);
 }
 
-.article .urgent {
+.urgent {
+    border-color: maroon;
+}
+
+.urgent h2 {
     background-color: rgba(148, 18, 18, 0.322);
     font-weight: bold;
 }
