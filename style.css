@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    min-width: 900px;
+    min-width: 990px;
     width: auto;
 }
 
@@ -20,7 +20,7 @@ title div {
 
 #title {
     color: whitesmoke;
-    font-size: 42px;
+    font-size: 40px;
     align-self: center;
 }
 
@@ -50,7 +50,7 @@ a {
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     border-left: 5px red solid;
     background-color: rgba(255, 0, 0, 0.178);
     border-radius: 0 8px 8px 0;
@@ -73,31 +73,29 @@ a {
 
 #int-links {
     display: flex;
-    align-self: flex-end;
-    font-size: 24px;
+    align-self: center;
 }
 
 .int-link {
+    font-size: 18px;
     border-radius: 10px 10px 0 0;
-    border-top: 2px solid rgb(49, 5, 5);
-    border-left: 2px solid rgb(49, 5, 5);
-    border-right: 2px solid rgb(49, 5, 5);
+    border: 2px solid rgb(49, 5, 5);
+    border-bottom-style: none;
     padding: 0.5ch 2ch;
     background-color: rgba(255, 0, 0, 0.171);
 }
 
 .int-link:hover {
-    transform: translate(0, -5px) scaleY(1.2);
+    transform: translate(0, -3px) scaleY(1.2);
 }
 
 #ext-links {
     display: flex;
     gap: 2ch;
     align-self: flex-start;
-    padding: 2ch;
-    margin-left: 8ch;
-    margin-right: 4ch;
-    flex-wrap: wrap;
+    padding: 1ch;
+    flex-wrap: nowrap;
+    flex: 0 1 auto;
 }
 
 #project-link {
