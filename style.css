@@ -1,9 +1,31 @@
 * {
+    /* reset and gen*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
+}
+
+:root {
+    /* colors */
+    --primary: maroon;
+    --primary-accent: slategrey;
+    --primary-alt: rgb(88, 8, 8);
+    --primary-text: #f7f7f7;
+    --secondary: firebrick;
+    --secondary-accent: darkslategrey;
+    --secondary-text: #f7f7f7;
+    --page-bg: #f7f7f7;
+    --footer-bg: rgb(4, 5, 7);
+    --footer-txt: #b4b4b4;
+    --dark-grey-blue: rgb(14,15,17);
+
+    /* font-size */
+    --super: 40px;
+    --large: 32px;
+    --medium: 24px;
+    --small: 16px;
 }
 
 body {
@@ -12,16 +34,6 @@ body {
     min-height: 100vh;
     min-width: 990px;
     width: auto;
-}
-
-title div {
-    font-size: 28px;
-}
-
-#title {
-    color: whitesmoke;
-    font-size: 40px;
-    align-self: center;
 }
 
 #header {
@@ -35,34 +47,20 @@ title div {
     display: flex;
     width: 100%;
     height: 5cm;
-    background-color: maroon;
-    border-bottom: 12px grey outset;
+    background-color: var(--primary);
+    border-bottom: 5px var(--primary-accent) solid;
     align-items: center;
+}
+
+#banner h1 {
+    font-size: var(--super);
+    align-self: center;
+    color: var(--page-bg);
 }
 
 a {
     text-decoration: none;
-    color: gainsboro;
-}
-
-.header-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size: 20px;
-    border-left: 5px red solid;
-    background-color: rgba(255, 0, 0, 0.178);
-    border-radius: 0 8px 8px 0;
-    padding: 0 1ch;
-    flex: 0;
-    min-width: 15ch;
-}
-
-.header-link:hover {
-    background-color:rgba(255, 0, 0, 0.384);
-    color: white;
-    transform: scale(1.1);
+    color: var(--primary-text);
 }
 
 #links {
@@ -77,7 +75,6 @@ a {
 }
 
 .int-link {
-    font-size: 18px;
     border-radius: 10px 10px 0 0;
     border: 2px solid rgb(49, 5, 5);
     border-bottom-style: none;
@@ -87,6 +84,17 @@ a {
 
 .int-link:hover {
     transform: translate(0, -3px) scaleY(1.2);
+    background-color: rgba(255, 0, 0, 0.596);
+}
+
+.ext-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8px;
+    gap: 2ch;
+    padding: 0.25ch 2ch;
+    flex: 0;
 }
 
 #ext-links {
@@ -94,8 +102,6 @@ a {
     gap: 2ch;
     align-self: flex-start;
     padding: 1ch;
-    flex-wrap: nowrap;
-    flex: 0 1 auto;
 }
 
 #project-link {
@@ -118,14 +124,6 @@ a {
     color: white;
 }
 
-#discord-icon {
-    display: inline;
-}
-
-#github-icon {
-    display: inline;
-}
-
 #logo {
     margin: 0.5cm;
     border-radius: 12px;
@@ -135,8 +133,8 @@ a {
 
 #footer {
     display: flex;
-    background-color: black;
-    color: whitesmoke;
+    background-color: var(--footer-bg);
+    color: var(--footer-txt);
     padding: 4rem; 
     font-weight: lighter;
     font-size: 14px;

@@ -97,7 +97,7 @@
 }
 
 .section a {
-    color: maroon;
+    color: var(--primary);
 }
 
 .section a:hover {
