@@ -97,11 +97,11 @@
 }
 
 .section a {
-    color: var(--primary);
+    color: var(--body-link);
 }
 
 .section a:hover {
-    color: orangered;
+    color: var(--body-link-hover);
 }
 
 #purpose {

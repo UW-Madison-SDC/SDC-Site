@@ -19,7 +19,9 @@
     --page-bg: #f7f7f7;
     --footer-bg: rgb(4, 5, 7);
     --footer-txt: #b4b4b4;
-    --dark-grey-blue: rgb(14,15,17);
+    --footer-accent: rgb(14,15,17);
+    --body-link-hover: orangered;
+    --body-link: maroon;
 
     /* font-size */
     --super: 40px;
@@ -185,4 +187,21 @@ a {
     border: 3px solid rgb(85, 1, 1);
     background-color:rgba(85, 1, 1, 0.603);
     padding: 2ch 4ch;
+}
+
+.closed {
+    position: absolute;
+    bottom: 50%;
+    text-align: center;
+    width: 100%;
+    font-size: var(--super);
+    font-weight: bold;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.article.hide {
+    display: none;
 }
