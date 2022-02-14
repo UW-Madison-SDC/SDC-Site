@@ -8,7 +8,7 @@ const bannerHTML = `
     <h1><div>UW-Madison</div>Software Development Club</h1>
     <div id="links">
         <div id="ext-links">
-            <a class="ext-link" id="project-link" href="https://github.com/segedi-UW/SDC-Projects">Project GitHub
+            <a class="ext-link" id="project-link" href="https://github.com/UW-Madison-SDC/SDC-Projects">Project GitHub
                 <img src="images/github-icon.png" />
             </a>
             <a href="https://discord.gg/kGssWKMjya" class="ext-link" id="discord-link">Discord
