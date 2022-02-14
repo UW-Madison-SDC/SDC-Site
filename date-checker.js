@@ -1,11 +1,12 @@
-const closed = document.createElement("div");
-closed.classList.add("closed");
-closed.innerText = "CLOSED";
 const due = document.querySelectorAll("[due]");
 due.forEach(e => {
     const date = Date.parse(e.getAttribute("due"));
     if (date <= Date.now()) {
         const fade = "0.2";
+        const closed = document.createElement("div");
+        closed.classList.add("closed");
+        closed.innerText = "CLOSED";
+        closed.style.backgroundColor = "grey";
         e.style.opacity = fade;
         e.style.position = "relative";
         e.appendChild(closed);
