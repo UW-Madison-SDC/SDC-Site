@@ -4,8 +4,8 @@
 // I call the header the banner here
 const bannerHTML = `
 <a href="index.html"><img id="logo" src="images/sdc-icon.png"/></a>
-<div id="header">
-    <h1><div>UW-Madison</div>Software Development Club</h1>
+<div id="header" class="flex text-white" style="justify-content: space-between; width: 100%;">
+    <h1 style="margin: auto 0;"><div>UW-Madison</div>Software Development Club</h1>
     <div id="links">
         <div id="ext-links">
             <a class="ext-link" id="project-link" href="https://github.com/UW-Madison-SDC/SDC-Projects">Project GitHub
