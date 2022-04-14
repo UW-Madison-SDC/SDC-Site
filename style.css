@@ -62,7 +62,6 @@ a {
 }
 
 .int-link:hover {
-    transform: translate(0, -3px) scaleY(1.2);
     background-color: rgba(255, 0, 0, 0.596);
 }
 
