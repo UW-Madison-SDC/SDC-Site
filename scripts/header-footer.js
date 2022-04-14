@@ -80,11 +80,11 @@ const criticalNews = `
 const banner = document.querySelector("#banner");
 const footer = document.querySelector("#footer");
 const critical = document.querySelector("#critical");
-if (!(banner === undefined))
+if (banner !== undefined)
     banner.innerHTML = bannerHTML;
-if (!(footer === undefined))
+if (footer !== undefined)
     footer.innerHTML = footerHTML;
-if (!(critical === undefined)) {
+if (critical !== undefined) {
     if (showCritical)
         critical.innerHTML = criticalNews;
     else critical.style.display = "none";
