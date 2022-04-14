@@ -51,9 +51,11 @@ a {
 #int-links {
     display: flex;
     align-self: center;
+    gap: 8px;
 }
 
 .int-link {
+    min-width: 2cm;
     border-radius: 10px 10px 0 0;
     border: 2px solid rgb(49, 5, 5);
     border-bottom-style: none;
