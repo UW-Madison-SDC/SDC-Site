@@ -2,6 +2,10 @@
 // All pages simply need to include the style.css sheet and this script, then put
 // the corresponding element with id matching one of these. See bottom of script.
 // I call the header the banner here
+
+// this toggles the critical section
+const showCritical = false;
+
 const bannerHTML = `
 <a href="index.html"><img id="logo" src="images/sdc-icon.png"/></a>
 <div id="header" class="flex text-white" style="justify-content: space-between; width: 100%;">
@@ -80,5 +84,9 @@ if (!(banner === undefined))
     banner.innerHTML = bannerHTML;
 if (!(footer === undefined))
     footer.innerHTML = footerHTML;
-if (!(critical === undefined))
-    critical.innerHTML = criticalNews;
+if (!(critical === undefined)) {
+    if (showCritical)
+        critical.innerHTML = criticalNews;
+    else critical.style.visibility = "hidden";
+}
+    
