@@ -87,6 +87,6 @@ if (!(footer === undefined))
 if (!(critical === undefined)) {
     if (showCritical)
         critical.innerHTML = criticalNews;
-    else critical.style.visibility = "hidden";
+    else critical.style.display = "none";
 }
     
