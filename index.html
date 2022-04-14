@@ -1,3 +1,8 @@
+<!-- SDC-Site -->
+<!-- Created by Anthony Segedi, VP of Engineering Spring 2022 -->
+<!-- On this page that is meant to be edited is the news area, which has -->
+<!-- appropriate documentation on site: #News_Area -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,13 +46,11 @@
     <div id="critical">
         <!-- inserted via js -->
     </div>
-    <div id="highlights-back">
         <div id="highlights-border">
             <div id="highlights">
                 <!-- inserted via js, requires highlight-script.js -->
             </div>
         </div>
-    </div>
     <a href="#news-title" id="news-tab" class="bg-white text-dark fs-300">News</a>
     <!-- The news area is a place to put SDC updates -->
     <!-- Currently can add articles - may be expanded later -->
@@ -55,6 +58,26 @@
         SDC News
     </h2>
     <div id="news-bg">
+
+        <!-- **** NEWS_AREA **** -->
+        <!-- All news blocks should be put in a div with article class -->
+        <!-- The article has the following tags included in syntax: -->
+        <!-- h1: title -->
+        <!-- h2: subheader -->
+        <!-- p: text -->
+
+        <!-- BUGS: There may be a bug where the news display does some odd things, but I have -->
+        <!-- not been able to reproduce it as of 4/13/2022. Consider checking for errors on different -->
+        <!-- screen sizes -->
+
+        <!-- ********* Overdue API ******** -->
+        <!-- I have also included an 'Old' API that reads the date provided -->
+        <!-- and gives closed articles or forms a alt appearance after the date -->
+        <!-- Check out 'old-news.js' for code. -->
+        <!-- To use it, simply include a 'due' attribute in the article div with the -->
+        <!-- format 'yyyy-mm-dd' -->
+
+        <!-- **** EDIT the #news-area div **** -->
         <div id="news-area" style="background: linear-gradient(hsl(var(--clr-dark)), hsl(var(--clr-black)));">
             <div class="article">
                 <h1>First Project Meeting 2/20</h1>
