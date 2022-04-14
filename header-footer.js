@@ -3,7 +3,7 @@
 // the corresponding element with id matching one of these. See bottom of script.
 // I call the header the banner here
 
-// this toggles the critical section
+// toggle the critical section
 const showCritical = false;
 
 const bannerHTML = `
