@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     z-index: -1;
-    background-image: url("images/prog-lang-back.png");
+    background-image: url("../images/prog-lang-back.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
