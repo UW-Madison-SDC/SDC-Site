@@ -3,20 +3,24 @@
 // the corresponding element with id matching one of these. See bottom of script.
 // I call the header the banner here
 
-// toggle the critical section
-const showCritical = false;
+fetch("/config.json").then(r => r.json())
+    .then(j => injectHeaders(j))
+    .catch(e => console.error("Failed to load config file: " + e));
 
-const bannerHTML = `
+// toggle the critical section
+function injectHeaders(config) {
+    const bannerHTML = `
+    <div id="banner">
 <a href="index.html"><img id="logo" src="images/sdc-icon.png"/></a>
 <div id="header" class="flex text-white" style="justify-content: space-between; width: 100%;">
     <h1 style="margin: auto 0;"><div>UW-Madison</div>Software Development Club</h1>
     <div id="links">
         <div id="ext-links">
-            <a class="ext-link" id="project-link" href="https://github.com/UW-Madison-SDC/SDC-Projects">Project GitHub
-                <img src="images/github-icon.png" />
+            <a class="ext-link" id="project-link" href="${config.projectLink}">Project GitHub
+                <img src="images/github-icon.png"/>
             </a>
-            <a href="https://discord.gg/kGssWKMjya" class="ext-link" id="discord-link">Discord
-                <img src="images/discord-icon.png" />
+            <a href="${config.discordLink}" class="ext-link" id="discord-link">Discord
+                <img src="images/discord-icon.png"/>
             </a>
         </div>
         <div id="int-links">
@@ -26,8 +30,19 @@ const bannerHTML = `
         </div>
     </div>
 </div>
+</div>
 `;
-const footerHTML = `
+
+    let boardHTML = "";
+    let contactHTML = "";
+    for (let b of config.board) {
+        boardHTML += "<li>" + b.name + " - " + b.title + "</li>";
+        if (b.isContact)
+            contactHTML += "<li>Email " + b.email + ", our " + b.title + "</li>";
+    }
+
+    const footerHTML = `
+    <div id="footer">
     <div id="info">
         <div>
             <h1>
@@ -36,7 +51,7 @@ const footerHTML = `
             <ul>
                 <li>
                     If you are interested in projects, check out our project
-                    <a href="https://github.com/segedi-UW/SDC-Projects">GitHub</a>
+                    <a href="${config.projectLink}">GitHub</a>
                 </li>
                 <li>Meetings for Spring 2022 are every other Wednesday, starting 2/6.</li>
                 <li>Project meetings are the Sunday before the Wednesday meeting.</li>
@@ -45,15 +60,10 @@ const footerHTML = `
         </div>
         <div>
             <h1>
-                Current Board (Spring 2022)
+                Current Board (${config.semester})
             </h1>
             <ul>
-                <li>Victoria Zhang - President</li>
-                <li>Ansh Kasturu - VP of Finance</li>
-                <li>Aidan Seeberg - VP of Internal Communication</li>
-                <li>Raihan Tanvir - VP of External Communication</li>
-                <li>Anthony Segedi - VP of Engineering</li>
-                <li>Jhanvi Sangha - VP of Engineering</li>
+            ${boardHTML}
             </ul>
         </div>
     </div>
@@ -64,29 +74,27 @@ const footerHTML = `
                 Contact Us
             </h1>
             <ul>
-                <li>Message us on <a href="https://discord.gg/kGssWKMjya">discord</a></li>
-                <li>Message us on <a href="https://www.linkedin.com/company/theuwsdc/">LinkedIn</a></li>
-                <li>Email rtanvir@wisc.edu, our VP of External Communication</li>
-                <li>Email vshang2@wisc.edu, our President</li>
+                <li>Message us on <a href="${config.discordLink}">discord</a></li>
+                <li>Message us on <a href="${config.linkedInLink}">LinkedIn</a></li>
+                ${contactHTML}
             </ul>
         </div>
         </div>
+</div>
         `;
-const criticalNews = `
-<p>
-    Pardon our dust, this site is currently a work in progress! Additionally, 
-    the project GitHub link has been activated! Find it at the top right of the page!
-</p>`;
-const banner = document.querySelector("#banner");
-const footer = document.querySelector("#footer");
-const critical = document.querySelector("#critical");
-if (banner !== undefined)
+
+    const body = document.querySelector("body");
+    const banner = document.createElement("div");
     banner.innerHTML = bannerHTML;
-if (footer !== undefined)
+    const footer = document.createElement("div");
     footer.innerHTML = footerHTML;
-if (critical !== undefined) {
-    if (showCritical)
-        critical.innerHTML = criticalNews;
-    else critical.style.display = "none";
+    const critical = document.createElement("div");
+    critical.innerHTML = `<div id="critical"><p>${config.criticalInfo}</p></div>`;
+
+    body.insertBefore(banner, body.firstChild);
+    body.insertBefore(critical, body.children[1]);
+    body.append(footer);
+    if (!config.isShowCriticalInfo)
+        critical.style.display = "none";
+
 }
-    

@@ -9,14 +9,15 @@
 <head>
     <!-- Standard meta -->
     <meta charset="utf-8" lang="en-us" />
-    <link rel="icon" type="image/png" href="images/sdc-icon.png"/>
+    <link rel="icon" type="image/png" href="images/sdc-icon.png" />
     <title>SDC</title>
 
     <!-- meta tags for LinkedIn preview -->
     <meta property="og:url" content="https://segedi-uw.github.io/SDC-Site/index.html/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Software Development Club Site">
-    <meta property="og:description" content='This is a brand-new website for the Software Development Club that I built using html, CSS, and JavaScript to replace the expired site. GitHub hosts it free of charge provided we do not use it commercially.'>
+    <meta property="og:description"
+        content='This is a brand-new website for the Software Development Club that I built using html, CSS, and JavaScript to replace the expired site. GitHub hosts it free of charge provided we do not use it commercially.'>
     <meta property="og:image" content="https://segedi-uw.github.io/SDC-Site/images/sdc-icon.png">
     <meta name="author" content="Anthony Segedi">
 
@@ -33,28 +34,23 @@
 </head>
 
 <body>
+    <!-- #banner and #critical are inserted here, defined in header-footer.js -->
     <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
         new Crate({
             server: '935966476261785620', // Software Development Club
             channel: '938520338034208808' // #announcements
         })
     </script>
-    <!-- banner and critical are defined in header-footer.js -->
-    <div id="banner">
-        <!-- inserted via js -->
-    </div>
-    <div id="critical">
-        <!-- inserted via js -->
-    </div>
-        <div id="highlights-border">
-            <div id="highlights">
-                <!-- inserted via js, requires highlight-script.js -->
-            </div>
+    <div id="highlights-border">
+        <div id="highlights">
+            <!-- inserted via js, requires highlight-script.js -->
         </div>
+    </div>
     <a href="#news-title" id="news-tab" class="bg-white text-dark fs-300">News</a>
     <!-- The news area is a place to put SDC updates -->
     <!-- Currently can add articles - may be expanded later -->
-    <h2 id="news-title" class="bg-dark text-white ctr" style="font-size: var(--fs-500); font-weight: bold; padding: 2cm 0 1cm 0;">
+    <h2 id="news-title" class="bg-dark text-white ctr"
+        style="font-size: var(--fs-500); font-weight: bold; padding: 2cm 0 1cm 0;">
         SDC News
     </h2>
     <div id="news-bg">
@@ -84,9 +80,10 @@
         <!-- **** EDIT the #news-area div **** -->
         <div id="news-area" style="background: linear-gradient(hsl(var(--clr-dark)), hsl(var(--clr-black)));">
             <div class="article" due="2022-5-5">
-                <h1>Project Presentations <span style="text-decoration: line-through; font-weight: 200;">5/1</span> 5/4</h1>
+                <h1>Project Presentations <span style="text-decoration: line-through; font-weight: 200;">5/1</span> 5/4
+                </h1>
                 <p>
-                    Project Presentations are upon us! It is time to celebrate all your hard work 
+                    Project Presentations are upon us! It is time to celebrate all your hard work
                     this semester! There will be donuts for those who come, regardless on if your team
                     finished by today or not.
                 </p>
@@ -97,7 +94,8 @@
             <div class="article" due="2022-2-21">
                 <h1>First Project Meeting 2/20</h1>
                 <p>
-                    Our first project meeting is Sunday, Feb. 20 at 2:00 p.m. in CS 1221! Remember to come with 5 project ideas with your group!
+                    Our first project meeting is Sunday, Feb. 20 at 2:00 p.m. in CS 1221! Remember to come with 5
+                    project ideas with your group!
                 </p>
             </div>
             <div class="article" due="2022-2-13">
@@ -176,9 +174,7 @@
 
         </div>
     </div>
-    <!-- Standard Site Footer -->
-    <!-- Defined in header-footer.js -->
-    <div id="footer"></div>
+    <!-- #footer is injected by header-footer.js -->
 </body>
 
 </html>
