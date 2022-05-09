@@ -5,7 +5,13 @@
 
 fetch("../config.json").then(r => r.json())
     .then(j => injectHeaders(j))
-    .catch(e => console.error("Failed to load config file: " + e));
+    .catch(e => {
+        console.error("Failed to load config file: " + e);
+        injectHeaders({
+            isShowCriticalInfo: true,
+            criticalInfo: "AHHHH: Configuration file 'config.json' failed to load"
+        });
+    });
 
 // toggle the critical section
 function injectHeaders(config) {
