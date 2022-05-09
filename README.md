@@ -67,6 +67,8 @@ reads all HTML elements on the page with the 'due' attribute, parsing the string
 contained by the attribute and comparing that with the current time to see if
 it is outdated or not. If it is outdated, some special formatting is applied
 (lower opacity, redness and a CLOSED banner appears as of this writing).
+The due format is '**yyyy-mm-dd**'. This and the article format is described in
+comments where they are used as well.
 
 The 'old-news.js' script deals with overflown news - a bar appears when there is more
 news to take in than space on the screen. Clicking the button shows the rest of the
