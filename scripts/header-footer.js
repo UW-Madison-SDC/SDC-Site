@@ -3,13 +3,14 @@
 // the corresponding element with id matching one of these. See bottom of script.
 // I call the header the banner here
 
-fetch("../config.json").then(r => r.json())
+fetch("config.json").then(r => r.json())
     .then(j => injectHeaders(j))
     .catch(e => {
         console.error("Failed to load config file: " + e);
         injectHeaders({
             isShowCriticalInfo: true,
-            criticalInfo: "AHHHH: Configuration file 'config.json' failed to load"
+            criticalInfo: "AHHHH: Configuration file 'config.json' failed to load",
+            board: [],
         });
     });
 

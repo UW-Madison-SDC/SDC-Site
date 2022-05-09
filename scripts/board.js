@@ -1,6 +1,13 @@
-fetch("../config.json").then(r => r.json())
+fetch("config.json").then(r => r.json())
 .then(j => injectInfo(j))
-.catch(e => console.error("Failed to load config file: " + e));
+.catch(e => {
+    console.error("Failed to load config file: " + e);
+    injectInfo({
+        isShowCriticalInfo: true,
+        criticalInfo: "AHHHH: Configuration file 'config.json' failed to load",
+        board: [],
+    });
+});
 
 function injectInfo(config) {
     const boardElement = document.querySelector("#board");
