@@ -1,4 +1,4 @@
-fetch("/config.json").then(r => r.json())
+fetch("../config.json").then(r => r.json())
 .then(j => injectInfo(j))
 .catch(e => console.error("Failed to load config file: " + e));
 
