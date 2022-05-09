@@ -4,42 +4,42 @@
             "name": "Victoria Zhang",
             "title": "President",
             "email": "vshang2@wisc.edu",
-            "imgURL": "/images/victoriaZhang.jpg",
+            "imgURL": "images/victoriaZhang.jpg",
             "isContact": true
         },
         {
             "name": "Ansh Kasturu",
             "title": "VP of Finance",
             "email": "",
-            "imgURL": "/images/anshKasturi.jpg",
+            "imgURL": "images/anshKasturi.jpg",
             "isContact": false
         },
         {
             "name": "Aidan Seeberg",
             "title": "VP of Internal Com.",
             "email": "",
-            "imgURL": "/images/aidanSeeberg.jfif",
+            "imgURL": "images/aidanSeeberg.jfif",
             "isContact": false
         },
         {
             "name": "Raihan Tanvir",
             "title": "VP of External Com.",
             "email": "rtanvir@wisc.edu",
-            "imgURL": "/images/raihanTanvir.png",
+            "imgURL": "images/raihanTanvir.png",
             "isContact": true
         },
         {
             "name": "Anthony Segedi",
             "title": "VP of Engineering",
             "email": "segedi@wisc.edu",
-            "imgURL": "/images/anthonySegedi.jpg",
+            "imgURL": "images/anthonySegedi.jpg",
             "isContact": false
         },
         {
             "name": "Jhanvi Sanhga",
             "title": "VP of Engineering",
             "email": "",
-            "imgURL": "/images/jhanviSangha.jpg",
+            "imgURL": "images/jhanviSangha.jpg",
             "isContact": false
         }
     ],
